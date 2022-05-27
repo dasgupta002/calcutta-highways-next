@@ -23,7 +23,7 @@ function App({ Component, pageProps }) {
           router.route !== '/post/[slug]' && <h1 className = "text-4xl mb-6">Calcutta Highways</h1>
         }
         {
-          router.route === '/' && <h3 className = "text-lg mb-24">A caricature in the rawest of formats, started from my love for poetry and literature. Then befell against the rough eerie beauty of bylanes of Calcutta. Lastly coloured as much as I could with my handpicked sweated shots of tweleveth hours.</h3>
+          router.route === '/' && <h3 className = "text-lg mb-24">A caricature in the rawest of formats, started from my love for poetry and literature. Then befell against the rough eerie beauty of bylanes of Calcutta. Lastly coloured as much as I could with my handpicked sweated shots of twelveth hours.</h3>
         }
         <Component {...pageProps} />
         <footer>
