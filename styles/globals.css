@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Neucha', cursive;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+}
+
+* ::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
