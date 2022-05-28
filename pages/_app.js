@@ -18,7 +18,7 @@ function App({ Component, pageProps }) {
         <title>Calcutta Highways</title>
         <link rel = "icon" href = "/favicon.png" />
       </Head>
-      <main className = "w-2/3 mx-auto">
+      <main className = "md:w-2/3 mx-auto">
         {
           router.route !== '/post/[slug]' && <h1 className = "text-4xl mb-6">Calcutta Highways</h1>
         }
