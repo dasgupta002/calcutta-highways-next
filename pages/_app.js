@@ -30,9 +30,6 @@ function App({ Component, pageProps }) {
           <p className = "text-white mb-4">Copyright © Subhrakanti Dasgupta | All Rights Reserved</p>
           <span className = "text-2xl">
             <a href = "https://www.instagram.com/dasgupta002/"><FontAwesomeIcon icon = { faInstagram } /></a>
-            &nbsp;
-            &nbsp;
-            <a href = "https://www.linkedin.com/in/dasgupta002/"><FontAwesomeIcon icon = { faLinkedin } /></a>
           </span>
         </footer>
       </main>
