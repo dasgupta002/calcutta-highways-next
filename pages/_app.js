@@ -29,7 +29,7 @@ function App({ Component, pageProps }) {
         <footer>
           <p className = "text-white mb-4">Copyright © Subhrakanti Dasgupta | All Rights Reserved</p>
           <span className = "text-2xl">
-            <a href = "https://www.instagram.com/dasgupta002/"><FontAwesomeIcon icon = { faInstagram } /></a>
+            <a href = "https://www.instagram.com/lensseanix/"><FontAwesomeIcon icon = { faInstagram } /></a>
           </span>
         </footer>
       </main>
