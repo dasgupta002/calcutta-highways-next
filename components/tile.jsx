@@ -8,7 +8,7 @@ export default function Tile({ index, post }) {
                 <p className = "text-white text-justify">{ gist }</p>
             </div>
             {
-                image && <img src = { 'https:' + image.fields.file.url } className = { index % 2 === 0 ? "h-36 w-full md:w-36 rounded-md rotate-6" : "h-36 w-full md:w-36 rounded-md -rotate-6" } />
+                image && <img src = { 'https:' + image.fields.file.url } className = { index % 2 === 0 ? "h-36 w-full md:w-36 hidden md:block rounded-md rotate-6" : "h-36 w-full md:w-36 hidden md:block rounded-md -rotate-6" } />
             }
         </section>
     )
