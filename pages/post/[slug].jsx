@@ -1,9 +1,10 @@
-import { createClient } from 'contentful'
-import Post from '././../../components/post' 
+import { createClient } from "contentful"
+
+import Post from "././../../components/post"
 
 const client = createClient({
     space: process.env.SPACE_ID,
-    accessToken: process.env.ACCESS_TOKEN
+    accessToken: process.env.ACCESS_TOKE
 })
 
 export const getStaticPaths = async () => {
@@ -22,12 +23,12 @@ export const getStaticPaths = async () => {
 }
 
 export async function getStaticProps({ params }) {
-    const response = await client.getEntries({ content_type: 'post', 'fields.slug': params.slug })
+    const response = await client.getEntries({ content_type: "post", 'fields.slug': params.slug })
 
     if(!response.items.length) {
         return {
             redirect: {
-                destination: '/',
+                destination: "/",
                 permanent: false
             }
         }
@@ -36,8 +37,7 @@ export async function getStaticProps({ params }) {
     return {
         props: { 
             post: response.items[0]
-        },
-        revalidate: 5
+        }
     }
 }
 

@@ -5,11 +5,17 @@
 @tailwind utilities;
 
 * {
-    font-family: 'Neucha', cursive;
+    font-family: "Neucha", cursive;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;
 }
 
 * ::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
+}
+
+.textual {
+    column-width: 275px;
+    column-gap: 66px;
+    column-rule: 1px solid #fbe9b0;
 }
