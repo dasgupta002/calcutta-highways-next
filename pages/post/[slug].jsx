@@ -4,7 +4,7 @@ import Post from "././../../components/post"
 
 const client = createClient({
     space: process.env.SPACE_ID,
-    accessToken: process.env.ACCESS_TOKE
+    accessToken: process.env.ACCESS_TOKEN
 })
 
 export const getStaticPaths = async () => {
