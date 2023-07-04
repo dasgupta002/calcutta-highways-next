@@ -8,7 +8,7 @@ const client = createClient({
 })
 
 export const getStaticPaths = async () => {
-  const response = await client.getEntries({ content_type: 'post' })
+  const response = await client.getEntries({ content_type: "post" })
   
   const paths = response.items.map((post) => {
     return {
