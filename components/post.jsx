@@ -1,11 +1,15 @@
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 export default function Post({ post }) {
-    const { title, type, image, content } = post.fields
-    
+    const { title, publishedOn, type, image, content } = post.fields
+
     return (
         <article className = "my-12">
-            <h1 className = "text-4xl font-bold line-through -rotate-5 mb-16">{ title }</h1>
+            <h1 className = "text-2xl md:text-4xl font-bold mb-6">{ title }</h1>
+            <p className = "text-sm md:tracking-[0.2rem] mb-24">
+                { publishedOn }    |    { type === "Poem" ? "5 minutes read" : "7 minutes read" }
+            </p>
+            
             {
                 type === "Poem" && <div className = "text-center">
                     { documentToReactComponents(content) }
@@ -13,15 +17,15 @@ export default function Post({ post }) {
             }
  
             {
-                type === "Paragraph" && <div className = "flex flex-col items-end">
+                type === "Paragraph" && <div className = "flex flex-col items-center">
                     {
                         image && <img 
                               src = { "https:" + image.fields.file.url } 
-                              className = "h-[18rem] w-[27rem] rounded-md mb-12" 
+                              className = "w-full h-[18rem] rounded-md mb-12" 
                         />
                     }
 
-                    <div className = "textual text-justify tracking-widest leading-7 first-letter:text-4xl">
+                    <div className = "text-sm text-justify tracking-widest leading-9 w-[85%] first-letter:text-6xl">
                         { documentToReactComponents(content) }
                     </div>
                 </div>
