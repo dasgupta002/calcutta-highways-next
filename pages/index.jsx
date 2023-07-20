@@ -23,7 +23,7 @@ export default function Home({ posts }) {
     <div className = "flex gap-12 mb-12">
       <div className = "flex flex-col">
         {
-          posts.map((post, index) => <Tile key = { index } index = { index } post = { post } />)
+          posts.map((post, index) => <Tile key = { index } post = { post } />)
         }
       </div>
       <img src = "/banner.png" className = "w-[15rem] h-[25rem] rounded-md hidden md:block"/>
